@@ -64,7 +64,7 @@ function get-fqdn {
 }
 
 function get-hostname {
-    if [[ $USE_LONG_HOSTNAME == true ]]; then
+    if [[ $USE_LONG_HOSTNAME == true || $KUBE_HOSTNAME == 'long' ]]; then
         get-fqdn
     else
         get-shost

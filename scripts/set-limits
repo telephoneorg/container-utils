@@ -221,7 +221,7 @@ function main {
                 set-ulimit $_type $_key $_value
             fi
         done < "$SL_FULLPATH"
-        echo 
+        echo
         maybe-show-errors
     fi
 }
