@@ -175,7 +175,7 @@ function linux::get-function-names {
 # net functions
 
 function net::is-long-hostname {
-    [[ $USE_LONG_HOSTNAME == true || $KUBE_HOSTNAME == 'long' || $(hostname) =~ \. ]]
+    [[ $USE_LONG_HOSTNAME == true || $ERLANG_HOSTNAME == 'long' || $KUBE_HOSTNAME == 'long' || $(hostname) =~ \. ]]
 }
 
 function net::is-short-hostname {
